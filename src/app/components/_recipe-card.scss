@@ -1,0 +1,61 @@
+textarea {
+    border: none;
+    border-bottom: 1px solid $violet-border;
+}
+
+#input-title {
+    @extend textarea;
+    display: inline;
+    margin: 0;
+}
+
+#input-title~label {
+    display: inline;
+}
+
+.input-radio {
+    margin: 0;
+    display: inline;
+}
+
+.choose-type {
+    margin: 20px auto;
+}
+
+.radio-button {
+    margin: 0 5px;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+.recipe-card {
+    margin: 20px 0;
+    padding: 20px;
+    box-shadow: $recipe-card-shadow;
+    background-color: $recipe-card-background-color;
+    transition: background-color 1s;
+}
+
+.recipe-card:hover {
+    background-color: $recipe-card-background-hover;
+}
+
+.recipe-text {
+    width: 85%;
+    display: inline-block;
+}
+
+.delete-recipe {
+    display: inline-block;
+}
+
+.delete-recipe:hover {
+    background-color: $delete-button-color-hover;
+    color: white;
+}
+
+.image-chef {
+    display: inline-block;
+    width: 30%;
+}

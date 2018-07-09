@@ -1,0 +1,30 @@
+.goUpPage {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    background-color: $violet-border;
+    background-image: url($up-button-image);
+    background-size: cover;
+    box-shadow: $up-button-shadow;
+    transition: width 1s, height 1s, opacity 2s;
+    opacity: 0.4;
+    .upLink {
+        padding: 76px 62px 10px 40px;
+        margin: 0;
+        transition: padding, 1s;
+    }
+}
+
+.goUpPage:hover {
+    width: 120px;
+    height: 120px;
+    opacity: 1;
+    .upLink {
+        padding: 95px 25px 10px 50px;
+    }
+}

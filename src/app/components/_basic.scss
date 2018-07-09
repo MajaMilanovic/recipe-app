@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/cute-kitchen-vector-seamless-pattern-elements-cooking-102455130.jpg);
+}
+
+a {
+    text-decoration: none;
+    width: 50%;
+    display: block;
+    margin: 75% auto;
+    color: white;
+}
+
+a:not(.upLink) {
+    @extend a;
+    margin: 0;
+}
+
+button {
+    display: block;
+    margin: 20px 20px 20px 0;
+    background: $gradient-color1;
+    @include background-image(top, bottom, $gradient-color1, $gradient-color2);
+    border-radius: 4px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+button:hover {
+    background: #ff91fd;
+    @include background-image(top, bottom, $gradient-color1, $gradient-color2);
+    text-decoration: none;
+}

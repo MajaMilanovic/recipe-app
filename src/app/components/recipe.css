@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: url(https://thumbs.dreamstime.com/b/cute-kitchen-vector-seamless-pattern-elements-cooking-102455130.jpg); }
+
+a, a:not(.upLink) {
+  text-decoration: none;
+  width: 50%;
+  display: block;
+  margin: 75% auto;
+  color: white; }
+
+a:not(.upLink) {
+  margin: 0; }
+
+button {
+  display: block;
+  margin: 20px 20px 20px 0;
+  background: #ff7de7;
+  -webkit-linear-gradient: top, #ff7de7, #f647ff;
+  -moz-linear-gradient: top, #ff7de7, #f647ff;
+  -ms-linear-gradient: top, #ff7de7, #f647ff;
+  -o-linear-gradient: top, #ff7de7, #f647ff;
+  linear-gradient: to bottom, #ff7de7, #f647ff;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
+
+button:hover {
+  background: #ff91fd;
+  -webkit-linear-gradient: top, #ff7de7, #f647ff;
+  -moz-linear-gradient: top, #ff7de7, #f647ff;
+  -ms-linear-gradient: top, #ff7de7, #f647ff;
+  -o-linear-gradient: top, #ff7de7, #f647ff;
+  linear-gradient: to bottom, #ff7de7, #f647ff;
+  text-decoration: none; }
+
+.open-modal {
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+  background-color: violet;
+  background-image: url("https://marketplace.canva.com/MACiibjUQlg/1/thumbnail_large/canva-kawaii-cooking-pot-icon-MACiibjUQlg.png");
+  background-size: cover;
+  box-shadow: 0px 18px 28px -11px #707070;
+  cursor: pointer;
+  transition: width 1s, height 1s; }
+  .open-modal p {
+    text-align: center;
+    margin: 20px auto;
+    padding: 60px 0;
+    transition: padding, 1s; }
+
+.open-modal:hover {
+  width: 120px;
+  height: 120px; }
+  .open-modal:hover p {
+    padding: 75px 0; }
+
+.modal-holder {
+  display: none; }
+
+.modal-holder-open {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; }
+
+.close {
+  color: #aaa;
+  float: right;
+  font-weight: bold;
+  margin: 0; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+.modal-body {
+  color: black;
+  display: inline-block;
+  padding: 20px; }
+
+.modal-error-message {
+  padding: 10px;
+  color: #ca1168; }
+
+textarea, #input-title {
+  border: none;
+  border-bottom: 1px solid violet; }
+
+#input-title {
+  display: inline;
+  margin: 0; }
+
+#input-title ~ label {
+  display: inline; }
+
+.input-radio {
+  margin: 0;
+  display: inline; }
+
+.choose-type {
+  margin: 20px auto; }
+
+.radio-button {
+  margin: 0 5px;
+  padding: 0;
+  background-color: white;
+  color: black; }
+
+.recipe-card {
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0px 16px 19px -11px #9e9e9e;
+  background-color: white;
+  transition: background-color 1s; }
+
+.recipe-card:hover {
+  background-color: #e6e6e6; }
+
+.recipe-text {
+  width: 85%;
+  display: inline-block; }
+
+.delete-recipe {
+  display: inline-block; }
+
+.delete-recipe:hover {
+  background-color: #ff3300;
+  color: white; }
+
+.image-chef {
+  display: inline-block;
+  width: 30%; }
+
+.goUpPage {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  background-color: violet;
+  background-image: url("http://fc08.deviantart.net/fs71/i/2012/067/7/2/totoro__by_karkajou1993-d4ryjz7.png");
+  background-size: cover;
+  box-shadow: 0px 18px 28px -11px #707070;
+  transition: width 1s, height 1s, opacity 2s;
+  opacity: 0.4; }
+  .goUpPage .upLink {
+    padding: 76px 62px 10px 40px;
+    margin: 0;
+    transition: padding, 1s; }
+
+.goUpPage:hover {
+  width: 120px;
+  height: 120px;
+  opacity: 1; }
+  .goUpPage:hover .upLink {
+    padding: 95px 25px 10px 50px; }
+
+.page-title {
+  font-size: 3rem;
+  color: violet;
+  text-shadow: 4px 4px 2px #969696; }
+
+.search-bar-wrapper input {
+  line-height: 20px;
+  width: 50%;
+  margin: 0;
+  padding: 10px;
+  font-size: 1.5rem; }
+
+.container {
+  width: 80%;
+  margin: 0 auto; }
+
+.container-error {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10% 0; }
+  .container-error p {
+    margin: 0 auto;
+    background-image: url("/cookin_fail_page.jpg");
+    color: violet;
+    font-size: 1.3rem;
+    padding: 35%;
+    background-size: contain; }
+
+/*# sourceMappingURL=recipe.css.map */

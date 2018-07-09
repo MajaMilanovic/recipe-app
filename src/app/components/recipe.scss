@@ -1,0 +1,39 @@
+@import "variables";
+@import "mixin";
+@import "basic";
+@import "modal";
+@import "recipe-card";
+@import "goUpButton";
+.page-title {
+    font-size: 3rem;
+    color: $violet-border;
+    text-shadow: $page-title-shadow;
+}
+
+.search-bar-wrapper input {
+    line-height: 20px;
+    width: 50%;
+    margin: 0;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container-error {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10% 0;
+    p {
+        margin: 0 auto;
+        background-image: url("/cookin_fail_page.jpg");
+        color: $violet-border;
+        font-size: 1.3rem;
+        padding: 35%;
+        background-size: contain;
+    }
+}
