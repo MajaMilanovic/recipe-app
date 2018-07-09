@@ -12,12 +12,13 @@ Inside of recipe-app folder type:
 
 $ npm install
 
-$ npm start
-
 And to start json-server, type:
 
 $ json-server --watch db.json --port 3004
 
+Then, start app (in new terminal window) with:
+
+$ npm start
 
 Created with Create React App & Sass.
 
